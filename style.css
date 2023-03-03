@@ -1,0 +1,122 @@
+body {
+  background: url(556743-abstract-forest-wallpaper-top-free-abstract-forest-background.jpg);
+  background-position: center;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 40px;
+  text-shadow: 2px 2px 6px rgb(167, 167, 170);
+  color: whitesmoke;
+}
+
+.box {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hours {
+  background-color: rgb(255, 177, 68);
+  padding: 10px;
+  margin: 0px;
+  border-radius: 10px;
+  transition: 0.4s;
+  cursor: default;
+}
+
+.minuts {
+  background-color: rgb(255, 177, 68);
+  padding: 10px;
+  margin: 0px;
+  border-radius: 10px;
+  transition: 0.4s;
+  cursor: default;
+}
+
+.secunds {
+  background-color: rgb(255, 177, 68);
+  padding: 10px;
+  margin: 0px;
+  border-radius: 10px;
+  transition: 0.4s;
+  cursor: default;
+}
+
+.time {
+  background: transparent;
+  backdrop-filter: blur(5px);
+  margin-top: 200px;
+  width: 500px;
+  height: 400px;
+  border-radius: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.922);
+}
+
+.buttonStart {
+  width: 80px;
+  height: 50px;
+  background-color: rgb(115, 0, 255);
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+  border: none;
+  transition: 0.4s;
+}
+
+.buttonPause {
+  width: 80px;
+  height: 50px;
+  background-color: rgb(115, 0, 255);
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+  border: none;
+  transition: 0.4s;
+}
+
+.buttonReset {
+  width: 80px;
+  height: 50px;
+  background-color: rgb(115, 0, 255);
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+  border: none;
+  transition: 0.4s;
+}
+
+.underText {
+  color: rgb(255, 255, 255);
+  cursor: default;
+}
+
+.buttonStart:hover {
+  transform: scale(1.07);
+}
+
+.buttonPause:hover {
+  transform: scale(1.07);
+}
+
+.buttonReset:hover {
+  transform: scale(1.07);
+}
+
+.hours:hover {
+  transform: scale(1.05);
+}
+
+.minuts:hover {
+  transform: scale(1.05);
+}
+
+.secunds:hover {
+  transform: scale(1.05);
+}
