@@ -12,36 +12,43 @@ let active = false
 let once
 
 const startTimer = () => {
-  once = setInterval(() => {
-    HOURS.textContent = hours.toString().padStart(2, '0')
-    MINUTS.textContent = minuts.toString().padStart(2, '0')
-    SECOND.textContent = seconds.toString().padStart(2, '0')
+	if (active) {
+		return
+	}
 
-    seconds += 1
-    if (seconds === 60) {
-      seconds = 0
-      minuts += 1
-    }
+	active = true
+	once = setInterval(() => {
+		HOURS.textContent = hours.toString().padStart(2, '0')
+		MINUTS.textContent = minuts.toString().padStart(2, '0')
+		SECOND.textContent = seconds.toString().padStart(2, '0')
 
-    if (minuts === 60) {
-      minuts = 0
-      hours += 1
-    }
-  }, 1000)
+		seconds += 1
+		if (seconds === 60) {
+			seconds = 0
+			minuts += 1
+		}
+
+		if (minuts === 60) {
+			minuts = 0
+			hours += 1
+		}
+	}, 1000)
 }
 
 const stopTimer = () => {
-  clearInterval(once)
+	clearInterval(once)
+	active = false
 }
 
 const resetTimer = () => {
-  HOURS.textContent = '00'
-  MINUTS.textContent = '00'
-  SECOND.textContent = '00'
-  hours = 0
-  minuts = 0
-  seconds = 0
-  clearInterval(once)
+	HOURS.textContent = '00'
+	MINUTS.textContent = '00'
+	SECOND.textContent = '00'
+	hours = 0
+	minuts = 0
+	seconds = 0
+	active = false
+	clearInterval(once)
 }
 
 BUTTONSTART.addEventListener('click', startTimer)
